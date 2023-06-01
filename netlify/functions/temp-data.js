@@ -32,7 +32,7 @@ function attemptTmpWriting() {
         Key: `counter${updatedCount}.txt`,
         Body: updatedCount.toString(),
         Bucket: 'anilb-s3',
-        ContentType: 'text/plain',
+        ContentType: 'text/plain'
       };
 
       const s3 = new aws.S3({
@@ -58,7 +58,7 @@ function attemptTmpWriting() {
 
 exports.handler = async function (event, context) {
   await attemptTmpWriting();
-  console.log("temp dir",os.tmpdir());
+  params.folder=os.tmpdir();
   return {
     statusCode: 200,
     headers: {
