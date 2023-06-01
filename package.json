@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "aws-sdk": "^2.1388.0",
-    "netlify": "^13.1.7"
+    "aws-sdk": "^3.0.0"
   }
 }
