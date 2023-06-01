@@ -1,8 +1,6 @@
 fs = require('fs');
 const aws = require('aws-sdk');
-
 const os = require('os');
-
 
 let updatedCount;
 let params;
@@ -38,8 +36,8 @@ function attemptTmpWriting() {
       };
 
       const s3 = new aws.S3({
-        accessKeyId: process.env.YOUR_AWS_KEY, 
-        secretAccessKey: process.env.YOUR_AWS_SECRET,
+        accessKeyId: process.env.YOUR_AWS_KEY,
+        secretAccessKey: process.env.YOUR_AWS_SECRET
       });
 
       s3.putObject(params, function (err, response) {
