@@ -14,7 +14,6 @@ export default async (request: Request, context: any) => {
  console.log("PAGE2", page2);
 
 
-
   // Search for the placeholder
   const regex = /{{RECIPE_IMAGE}}/gi;
 
