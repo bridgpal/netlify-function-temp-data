@@ -1,5 +1,5 @@
 
-import { XMLParser, XMLBuilder, X2joptions} from "npm: fast-xml-parser";
+import { XMLParser, XMLBuilder, X2joptions} from "npm:fast-xml-parser";
 
 export default async (request: Request, context: any) => {
 
